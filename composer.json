@@ -1,0 +1,23 @@
+{
+    "name": "testtools/test-database-manager",
+    "description": "Reset and manage shared test database for Laravel apps",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "TestTools\\TestDatabaseManager\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^9.0|^10.0|^11.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TestTools\\TestDatabaseManager\\TestDatabaseManagerServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
